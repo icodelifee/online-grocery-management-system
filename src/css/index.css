@@ -1,0 +1,52 @@
+body {
+  font-family: "Inter", sans-serif !important;
+}
+
+.carousel{
+  padding-top: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.carousel-inner{
+  height: 320px;
+  box-shadow: -4px 14px 43px -25px rgba(0, 0, 0, 0.53);
+}
+
+.dod{
+  padding-left: 30px;
+  padding-top: 24px;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.card {
+  max-width: 300px;
+  margin-right: 20px;
+}
+.card-body{
+  padding: 20px 10px 10px 20px;
+}
+.col > img {
+  height: 150px;
+  width: 100px;
+}
+
+.card-title{
+  padding-top: 20px;
+  font-size: 15px;
+}
+
+.offer-text{
+  font-size: 15px;
+}
+
+.btn-success{
+  width: 90px;
+  height: 30px;
+  padding: none;
+  margin: 0;
+}
+
+.darken-3{
+  background-color: #2d5dd9;
+}
