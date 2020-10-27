@@ -1,0 +1,47 @@
+.cat-bar {
+  /* height: 18.5rem; */
+  width: 100%;
+  border-radius: 2px;
+  font-size: 1.5rem;
+  text-align: center;
+  box-shadow: -4px 14px 43px -12px rgba(0, 0, 0, 0.1);
+}
+.cat {
+  margin: auto;
+  /* max-width: 300px; */
+}
+
+.cat-image {
+  height: 70px;
+  width: 40px;
+}
+.cat-name-head {
+  font-family: "CSR";
+  font-size: 13px;
+  color: #333;
+  /* padding-left: 10px; */
+}
+
+.cat-col-single{
+  padding: 0px 10px 0px 10px;
+}
+
+@media screen and (min-width: 601px) {
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 990px) {
+  .cat-bar {
+    display: none;
+  }
+}
+
+.cat > .row {
+  padding-top: 0px;
+  /* font-weight: 600; */
+}
+
+.cat > .row > .col:hover {
+  color: #2d5dd9;
+  cursor: pointer;
+}

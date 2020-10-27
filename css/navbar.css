@@ -1,0 +1,33 @@
+.navbar-dark {
+    background-color: #2d5dd9;
+    box-shadow: none;
+}
+
+.navbar-brand {
+    font-family: 'CSB';
+    letter-spacing: 0.3;
+    padding-left: 10px;
+    font-size: 30px;
+}
+
+.nav-item {
+    font-size: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.search-form {
+    margin-left: 100px;
+}
+
+.fa-search {
+    font-size: 2rem;
+}
+
+#search-bar {
+    width: 500px;
+    height: 40px;
+    font-size: 13px;
+    padding-left: 20px;
+    /* margin-left: 20px; */
+}

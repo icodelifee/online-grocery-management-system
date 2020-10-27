@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "CSB";
+  src: url("../assets/fonts/CircularStd-Bold.ttf");
+}
+@font-face {
+  font-family: "CSM";
+  src: url("../assets/fonts/CircularStd-Medium.ttf");
+}
+@font-face {
+  font-family: "CSR";
+  src: url("../assets/fonts/CircularStd-Book.ttf");
+}
+body {
+  font-family: "CSR", sans-serif !important;
+}
+
+.carousel {
+  padding-top: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.carousel-inner {
+  height: 32rem;
+  box-shadow: -4px 14px 43px -25px rgba(0, 0, 0, 0.53);
+}
+
+.carousel-item > img {
+  height: 50vh;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 990px) {
+  .carousel-inner {
+    height: 30vh;
+  }
+}

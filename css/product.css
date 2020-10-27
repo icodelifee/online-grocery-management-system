@@ -1,0 +1,71 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  /* box-sizing: border-box; */
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+@font-face {
+  font-family: "CSB";
+  src: url("../assets/fonts/CircularStd-Bold.ttf");
+}
+@font-face {
+  font-family: "CSM";
+  src: url("../assets/fonts/CircularStd-Medium.ttf");
+}
+@font-face {
+  font-family: "CSR";
+  src: url("../assets/fonts/CircularStd-Book.ttf");
+}
+body {
+  font-family: "CSR", sans-serif !important;
+}
+/* .right-pane{
+    padding-left: 100px;
+} */
+section{
+    margin-top: 40px;
+}
+.glyphicon-search {
+  color: #2874f0;
+}
+.prod-name {
+  font-size: 20px;
+  font-weight: 700;
+}
+.prod-price {
+  font-size: 18px;
+  font-weight: 500;
+}
+.avail {
+  margin-top: 30px;
+}
+
+.buybuttons {
+  margin-top: 50px;
+}
+.prod-pic{
+    margin-right: 1px;
+}
+.prod-desc{
+    margin-bottom: 40px;
+}
+.prod-desc h3{
+    font-size: 25px;
+    font-weight: 700;
+}
+.prod-desc p{
+    font-size: 17px;
+    font-weight: 500;
+}
+.badge{
+    font-size: 15px;
+}

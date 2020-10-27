@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "CSB";
+  src: url("../assets/fonts/CircularStd-Bold.ttf");
+}
+@font-face {
+  font-family: "CSM";
+  src: url("../assets/fonts/CircularStd-Medium.ttf");
+}
+@font-face {
+  font-family: "CSR";
+  src: url("../assets/fonts/CircularStd-Book.ttf");
+}
+body {
+  font-family: "CSR", sans-serif !important;
+}
+
+.main-head {
+  height: 150px;
+  background: #fff;
+}
+
+.sidenav {
+  height: 100%;
+  background-color: #2d5dd9;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.main {
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .signup-form {
+    margin-top: 10%;
+    margin-left: 60%;
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .login-form {
+    margin-top: 50%;
+  }
+
+  .register-form {
+    margin-top: 10%;
+  }
+  .signup-form {
+    margin-top: 10%;
+    padding-top: 20px;
+    margin-left: 60%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    margin-left: 30%;
+  }
+
+  .sidenav {
+    width: 40%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+  }
+
+  .login-form {
+    margin-top: 50%;
+    margin-left: 50%;
+    /* margin-right: 40px; */
+  }
+  .signup-form {
+    margin-top: 50%;
+    margin-left: 20%;
+  }
+  /* 
+  .register-form {
+    margin-top: 20%;
+  } */
+}
+
+.login-main-text {
+  /* margin-top: 4%; */
+  padding: 60px;
+  color: #fff;
+}
+
+.login-main-text h2 {
+  font-weight: 300;
+}
+
+.main-header {
+  font-weight: bolder;
+  font-size: 60px;
+  font-family: "CSB";
+}
+.left-img {
+  height: 400px;
+  position: initial;
+}
+.form-control {
+  width: 300px;
+}
+
+.form-header {
+  color: black;
+  font-family: "CSB";
+}
+.btn-primary {
+  background-color: #2d5dd9;
+  width: 200px;
+}
