@@ -1,6 +1,4 @@
-$("#addtocart").click(() => {
-  const itemId = $("#addtocart").val();
-
+function addItem(itemId) {
   $.ajax({
     url: "../services/additem.php",
     type: "get",
@@ -14,4 +12,4 @@ $("#addtocart").click(() => {
       console.log(textStatus, errorThrown);
     },
   });
-});
+}

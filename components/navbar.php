@@ -1,5 +1,5 @@
 <?php
-session_start();
+// session_start();
 require_once(realpath(dirname(__FILE__) . "/../services/connect_db.php"));
 $user;
 if (isset($_SESSION['user'])) {
@@ -29,10 +29,16 @@ if (isset($_SESSION['user'])) {
         <ul class="navbar-nav ml-auto">
             <?php
             if (isset($user)) {
+                echo '<a  href="/miniproject/views/cart.php"><div id="ex4" style="font-size: 1.3rem; color:white">
+                        <span class="p1 fa-stack fa-lg has-badge" data-count="4">
+                            <!--<i class="p2 fa fa-circle fa-stack-2x"></i>-->
+                            <i class="p3 fa fa-shopping-cart fa-stack-1x xfa-inverse" data-count="4b"></i>
+                        </span>
+                    </div></a>';
                 echo '
                 <li class="nav-item">
-                    <a class="nav-link" href="./views/login.php">
-                        Hi, ' . $user[1] .'<span class="sr-only">(current)</span>
+                    <a class="nav-link" href="/miniproject/views/cart.php">
+                        Hi, ' . $user[1] . '<span class="sr-only">(current)</span>
                     </a> 
                 </li>
                 <li class="nav-item">
@@ -105,5 +111,21 @@ if (isset($_SESSION['user'])) {
         font-size: 13px;
         padding-left: 20px;
         /* margin-left: 20px; */
+    }
+
+    #ex4 .p1[data-count]:after {
+        position: absolute;
+        right: 10%;
+        top: 8%;
+        content: attr(data-count);
+        font-size: 40%;
+        padding: .2em;
+        border-radius: 50%;
+        line-height: 1em;
+        color: white;
+        background: rgba(255, 0, 0, .85);
+        text-align: center;
+        min-width: 1em;
+
     }
 </style>
