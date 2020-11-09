@@ -86,15 +86,15 @@ if (isset($_GET["id"])) {
                                 <div class="prod-card equal col-12 col-md-6 col-lg-4">
                                     <div class="card card-block d-flex" style="height: 100%">
                                         <img class="card-img-top" src="' . $products[$i][8] . '" alt="Card image cap">
-                                            <div class="card-body" >
+                                            <div class="card-body >
                                                 <h4 class="card-title"><a href="products.php?id=' . $products[$i][0] . '" title="View Product">' . $products[$i][1] . '</a></h4>
                                                 <p class="qty">' . $products[$i][2] . '</p>
                                                 <p class="price">₹' . $products[$i][4] . '</p>
-                                                <button id="addtocart" value="'.$products[$i][0].'" class="btn btn-success btn-block atc mx-auto">Add to cart</a>
+                                                <button  onclick="addItem(' . $products[$i][0] . ')" class="btn btn-success btn-block atc mx-auto">Add to cart</a>
                                             </div>
                                     </div>
                                 </div>
-                        </a>';;
+                        </a>';
                         }
                         ?>
                     </div>
@@ -122,5 +122,4 @@ if (isset($_GET["id"])) {
     <script src="../js/addtocart.js"></script>
 </main>
 <?php include '../components/footer.php'; ?>
-
 </html>
